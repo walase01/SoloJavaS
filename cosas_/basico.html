@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fundamentos de javascripts</h1>
+
+    <script>
+        var hola = "Hola mundo";
+        let hello = "Hello word";
+        console.log(hola);
+        console.log(hello);
+            
+
+        //Cadena de texto
+        let nombr = "John";
+        let apellid = "Mircha";
+
+        let salud = new String("Hola mundo");
+
+        let saludos = "hola como estas me llamo js";
+
+        console.log(
+            nombr.length,
+            apellid.length,
+            salud.length,
+            nombr.toUpperCase(),
+            apellid.toLowerCase(),
+            saludos.includes("js")
+            
+        );
+
+        //concatenar y cosas mas
+
+        let nombre = "jose";
+        let apellido = "Marte";
+
+        let saludo = "Hola mi nombre es: " + nombre + " " + apellido;
+
+        console.log(saludo);
+
+        //interpolacion de variable - osea incluirla dentro de la cadena el valor dinamicamente de la variable
+        //para lo cual se utilizara template string
+        //codigo ascii alt-96 = ``
+        let saludo3 = `Hola mi nombre es: ${nombre} ${apellido}`;
+
+        console.log(saludo3);
+
+        let ul = ` <ul>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ul>`;
+        console.log(ul);
+
+        //numeros
+
+        let a = 5;
+        let b = new Number(1);
+        let c = 7.19;
+        let d = "5.19";
+
+        console.log(a,b);
+        console.log(c.toFixed(1));
+        console.log(parseInt(c));
+        console.log(parseFloat(c));
+        console.log(typeof c,typeof d); //identifica el tipo de variable que estamos utiliznado
+
+        console.log(a+c);
+        console.log(a+d);
+        console.log(a+parseInt(d));
+    </script>
+
+    <ul>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+    </ul>
+</body>
+</html>
